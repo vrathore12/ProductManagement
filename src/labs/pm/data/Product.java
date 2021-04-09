@@ -36,6 +36,8 @@ public abstract class Product implements Rateable<Product> {
     private String name;
     private BigDecimal price;
     private Rating rating;
+    int i;
+    
 
     public Product(int id, String name, BigDecimal price, Rating rating) {
         this.id = id;
@@ -47,6 +49,7 @@ public abstract class Product implements Rateable<Product> {
     public Product(int id, String name, BigDecimal price) {
         this(id, name, price, NOT_RATED);
     }
+    
 
 //    public Product() {
 //        this(0, "no name", BigDecimal.ZERO);
